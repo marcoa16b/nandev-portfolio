@@ -1,23 +1,29 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@theme-toggles/react': ^4.1.0
   autoprefixer: 10.4.14
   eslint: 8.39.0
   eslint-config-next: 13.3.4
   next: 13.3.4
+  next-themes: ^0.2.1
   postcss: 8.4.23
   react: 18.2.0
   react-dom: 18.2.0
+  react-icons: ^4.8.0
   tailwindcss: 3.3.2
 
 dependencies:
+  '@theme-toggles/react': 4.1.0_biqbaboplfbrettd7655fr4n2y
   autoprefixer: 10.4.14_postcss@8.4.23
   eslint: 8.39.0
   eslint-config-next: 13.3.4_eslint@8.39.0
   next: 13.3.4_biqbaboplfbrettd7655fr4n2y
+  next-themes: 0.2.1_vwuoxxmoeydgew5hhkavebkk4e
   postcss: 8.4.23
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
+  react-icons: 4.8.0_react@18.2.0
   tailwindcss: 3.3.2
 
 packages:
@@ -257,6 +263,16 @@ packages:
     resolution: {integrity: sha512-sJ902EfIzn1Fa+qYmjdQqh8tPsoxyBz+8yBKC2HKUxyezKJFwPGOn7pv4WY6QuQW//ySQi5lJjA/ZT9sNWWNTg==}
     dependencies:
       tslib: 2.5.0
+    dev: false
+
+  /@theme-toggles/react/4.1.0_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-h3SuJMsej8DfelHt5fjNIlaMfJOK52Vku4pPDVoHaTwjAcoTr4fn8hzeur2oiqWBYFYfKugvv1RdQaBFXaiPKg==}
+    peerDependencies:
+      react: ^16 || ^17 || ^18
+      react-dom: ^16 || ^17 || ^18
+    dependencies:
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
     dev: false
 
   /@types/json5/0.0.29:
@@ -1695,6 +1711,18 @@ packages:
     resolution: {integrity: sha512-OWND8ei3VtNC9h7V60qff3SVobHr996CTwgxubgyQYEpg290h9J0buyECNNJexkFm5sOajh5G116RYA1c8ZMSw==}
     dev: false
 
+  /next-themes/0.2.1_vwuoxxmoeydgew5hhkavebkk4e:
+    resolution: {integrity: sha512-B+AKNfYNIzh0vqQQKqQItTS8evEouKD7H5Hj3kmuPERwddR2TxvDSFZuTj6T7Jfn1oyeUyJMydPl1Bkxkh0W7A==}
+    peerDependencies:
+      next: '*'
+      react: '*'
+      react-dom: '*'
+    dependencies:
+      next: 13.3.4_biqbaboplfbrettd7655fr4n2y
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
+    dev: false
+
   /next/13.3.4_biqbaboplfbrettd7655fr4n2y:
     resolution: {integrity: sha512-sod7HeokBSvH5QV0KB+pXeLfcXUlLrGnVUXxHpmhilQ+nQYT3Im2O8DswD5e4uqbR8Pvdu9pcWgb1CbXZQZlmQ==}
     engines: {node: '>=16.8.0'}
@@ -2024,6 +2052,14 @@ packages:
       loose-envify: 1.4.0
       react: 18.2.0
       scheduler: 0.23.0
+    dev: false
+
+  /react-icons/4.8.0_react@18.2.0:
+    resolution: {integrity: sha512-N6+kOLcihDiAnj5Czu637waJqSnwlMNROzVZMhfX68V/9bu9qHaMIJC4UdozWoOk57gahFCNHwVvWzm0MTzRjg==}
+    peerDependencies:
+      react: '*'
+    dependencies:
+      react: 18.2.0
     dev: false
 
   /react-is/16.13.1:
