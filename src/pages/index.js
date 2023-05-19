@@ -18,6 +18,8 @@ export default function Home() {
     <>
       <Head>
         <title>NanDev ~ Servicios de diseño y desarrollo web</title>
+        <link rel="icon" href="public/favicon.ico" />
+
         <meta name="description" content="Diseño web y desarrollo excepcionales: Descubre cómo puedo ayudarte a crear una presencia en línea impresionante y funcional con mis habilidades en diseño web y desarrollo frontend." />
         <meta name="keywords" content="desarrollo web, diseño web, ui, ux, next js, react js, javascript, desarrollo, webdev, programacion, pagina web, negocios, emprendimientos, empresas" />
         <meta name="author" content="Marco Agüero" />
