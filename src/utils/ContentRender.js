@@ -23,7 +23,7 @@ export const routes = [
   },
   {
     name: 'Blog',
-    path: 'https://nandev.hashnode.dev/',
+    path: 'https://blog.nandev.xyz/',
     target: '_blank',
   }
 ]
