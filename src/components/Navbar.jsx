@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import Logo from '@/assets/images/logo.png'
@@ -7,7 +7,7 @@ import { Around } from "@theme-toggles/react"
 import { useTheme } from 'next-themes'
 import { routes } from "../utils/ContentRender";
 
-const LinkItem = ({ link, name, target }) => {
+function LinkItem({ link, name, target }) {
   return (
     <Link href={link} legacyBehavior>
       <a target={target} className={`px-2 py-1 relative mx-0 my-2 md:mx-2 md:my-0 max-w-[150px] text-xl hover:font-bold duration-200`}>
@@ -20,7 +20,9 @@ const LinkItem = ({ link, name, target }) => {
 export default function Navbar () {
   const [isToggled, setToggle] = useState(true)
   const [open, setOpen] = useState(false);
-  const { theme, setTheme } = useTheme();
+  const { systemTheme, theme, setTheme } = useTheme();
+  const currentTheme = theme === 'system' ? systemTheme : theme;
+
 
   return (
     <div className='fixed h-[60px] top-0 left-0 w-full md:h-[80px] flex items-center justify-between px-5 bg-[--background-primary] dark:bg-[--background-primary-dark] z-50'>
@@ -96,10 +98,10 @@ export default function Navbar () {
       </div>
 
       <div onClick={() => {
-          if (theme == 'light'){
+          if (currentTheme == 'light'){
             setTheme('dark');
             setToggle(false)
-          } else if (theme == 'dark') {
+          } else if (currentTheme == 'dark') {
             setTheme('light');
             setToggle(true)
           }
