@@ -77,7 +77,7 @@ export const homeContent = {
     title: 'Sobre mí',
     description: 'Soy un desarrollador frontend apasionado por diseño web y programación, combino estética visual con funcionalidad y usabilidad. Estudio Ingeniería en Informática, buscando nuevos conocimientos y desafíos en tecnología. Meta: mejorar y ofrecer proyectos innovadores a clientes.', 
     image: AboutImg,
-    cvLink: 'https://drive.google.com/file/d/1DIpwry3zGW8cU6ZsztsGMkZAUXNglRhB/view?usp=share_link',
+    cvLink: 'https://drive.google.com/file/d/1x5EgzYxPFU--BQ-zFHui4P2C0GEtnuJF/view?usp=share_link',
     tags: [
       {
         title: 'Edad: ',
