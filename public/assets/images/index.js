@@ -11,6 +11,7 @@ import NanDevImg from "./nandev.png";
 import ProfileImg from "./aboutProfile-img.jpg";
 
 import JivisImg from "./projects/jivis.png";
+import AIChatImg from "./projects/aichat.jpg";
 
 export {
   CardDesigner,
@@ -24,4 +25,5 @@ export {
   NanDevImg,
   ProfileImg,
   JivisImg,
+  AIChatImg,
 };

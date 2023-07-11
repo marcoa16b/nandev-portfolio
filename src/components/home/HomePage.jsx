@@ -6,11 +6,15 @@ import {
   FaGithub,
   FaInstagram,
   FaLinkedin,
-  FaArrowUpRightFromSquare,
 } from "react-icons/fa";
 import { FiExternalLink } from "react-icons/fi";
 
-import { NanDevImg, ProfileImg, JivisImg } from "../../../public/assets/images";
+import {
+  NanDevImg,
+  ProfileImg,
+  JivisImg,
+  AIChatImg,
+} from "../../../public/assets/images";
 import { useState } from "react";
 import useWindowWidth from "../../hooks/useWindowWidth";
 import useScrollColor from "../../hooks/useScrollColor";
@@ -18,18 +22,18 @@ import BackgroundCircle from "../mouseCircle/BackgroundCircle";
 
 const proyectList = [
   {
-    title: "Jivis - Control de empleados",
+    title: "AIChatBot",
     description:
-      "Una aplicación simple construida para llevar un control de los empleados de la empresa y los dias libres que tiene cada uno de ellos.",
-    image: JivisImg,
-    tags: ["React.js", "PWA", "MUI"],
-    link: "https://app-jivis.vercel.app/",
-    github: "https://github.com/nandev16/Jivis-SimplePWA",
+      "Un chat que se comunica con una IA por medio de una API, para generar una converzacion. Costruida para practicar la implementación de IAs en aplicaciones web, y la utilizacion de modelos de IA de HuggingFace.",
+    image: AIChatImg,
+    tags: ["Next.js", "Typescript", "Tailwindcss"],
+    link: "https://aichat-khaki.vercel.app/",
+    github: "https://github.com/nandev16/ia-chat",
   },
   {
-    title: "Jivis - Control de empleados 2",
+    title: "Jivis - Control de empleados",
     description:
-      "Una aplicación simple construida para llevar un control de los empleados de la empresa y los dias libres que tiene cada uno de ellos.",
+      "Una aplicación simple construida para llevar un control de los empleados de la empresa y los dias libres que tiene cada uno de ellos. El link adjunto lleva a una Demo que utiliza el almacenamiento del navegador para poder ver el funcionamiento general de la aplicación.",
     image: JivisImg,
     tags: ["React.js", "PWA", "MUI"],
     link: "https://app-jivis.vercel.app/",
@@ -39,16 +43,12 @@ const proyectList = [
 
 const articlesList = [
   {
-    title: "Un articulo de prueba para testear",
-    link: "#",
+    title: "El arte de dominar los React Hooks. Parte 2.",
+    link: "https://blog.nandev.xyz/arte-de-dominar-los-react-hooks-parte2",
   },
   {
-    title: "Segundo articulo de prueba para testear",
-    link: "#",
-  },
-  {
-    title: "Tercer articulo de prueba para testear",
-    link: "#",
+    title: "El arte de dominar los React Hooks. Parte 1.",
+    link: "https://blog.nandev.xyz/arte-de-dominar-los-react-hooks-parte1",
   },
 ];
 
@@ -193,7 +193,7 @@ const HomePage = () => {
         <section id="about" className="z-10 relative min-h-screen py-[40px]">
           <h1 className="text-2xl text-[#2CFFC6] mb-10">Sobre mí</h1>
           <div className="flex flex-col-reverse min-h-[calc(100vh-140px)] items-center md:grid md:grid-cols-2 md:items-center">
-            <p className="text-sm md:text-base xl:text-lg text-center md:text-right pb-2 md:pr-2">
+            <p className="text-sm md:text-base xl:text-lg text-center md:text-right pb-2 pt-5 md:pr-4">
               Actualmente, estoy cursando la carrera de Ingeniería en
               Informática en la Universidad virtual UNED de Costa Rica. <br />
               <br /> A lo largo de mi trayecto académico y profesional, he
@@ -293,7 +293,7 @@ const HomePage = () => {
           className="z-10 relative min-h-screen py-[40px] flex flex-col justify-between"
         >
           <h1 className="text-2xl text-[#2CFFC6] mb-10">
-            Algunos de mis artículos
+            Algunos de mis artículos recientes
           </h1>
 
           <div>
@@ -321,7 +321,7 @@ const HomePage = () => {
             </p>
           </div>
 
-          <p className="text-center text-[#A2A3A4]">
+          <p className="text-center text-[#A2A3A4] pt-10">
             Web diseñada en Figma, construida con Next.js y tailwindcss y
             desplegada en Vercel por Marco Agüero.
           </p>

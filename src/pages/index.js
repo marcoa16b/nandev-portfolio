@@ -1,57 +1,19 @@
-import { useEffect, useState } from "react";
-
-import Navbar from "@/components/Navbar";
-import Header from "@/components/home/Header";
-import Services from "@/components/home/Services";
-import Portfolio from "@/components/home/Portfolio";
-import Contact from "@/components/home/Contact";
-import Footer from "@/components/home/Footer";
-import About from "@/components/home/About";
 import HeadContent from "../components/HeadContent";
-
-import { portfolioData } from "../utils/ContentRender";
-import Head from "next/head";
-import NanFluxPage from "../components/NanFluxPage";
 import HomePage from "../components/home/HomePage";
 
 export default function Home() {
   return (
     <>
-      <HeadContent />
-
+      <HeadContent
+        title={"NanDev ~ Servicios de diseño y desarrollo web"}
+        description={
+          "Diseño web y desarrollo excepcionales: Descubre cómo puedo ayudarte a crear una presencia en línea impresionante y funcional con mis habilidades en diseño web y desarrollo frontend."
+        }
+        keywords={
+          "desarrollo web, diseño web, ui, ux, next js, react js, javascript, desarrollo, webdev, programacion, pagina web, negocios, emprendimientos, empresas"
+        }
+      />
       <HomePage />
-
-      {/* <main> */}
-
-      {/* <header>
-          <Navbar />
-          <Header />
-        </header> */}
-
-      {/* SERVICIOS */}
-      {/* <section id="services">
-          <Services />
-        </section> */}
-
-      {/* PROYECTOS */}
-      {/* <section id="projects">
-          <Portfolio data={portfolioData} />
-        </section> */}
-
-      {/* ABOUT */}
-      {/* <section id="about">
-          <About />
-        </section> */}
-
-      {/* CONTACT */}
-      {/* <section id="contacto">
-          <Contact />
-        </section>
-
-        <footer>
-          <Footer />
-        </footer> */}
-      {/* </main> */}
     </>
   );
 }

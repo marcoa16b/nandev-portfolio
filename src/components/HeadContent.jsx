@@ -1,19 +1,13 @@
 import Head from "next/head";
 
-const HeadContent = () => {
+const HeadContent = ({ title, description, keywords }) => {
   return (
     <Head>
-      <title>NanDev ~ Servicios de diseño y desarrollo web</title>
+      <title>{title}</title>
       <link rel="icon" href="public/favicon.ico" />
 
-      <meta
-        name="description"
-        content="Diseño web y desarrollo excepcionales: Descubre cómo puedo ayudarte a crear una presencia en línea impresionante y funcional con mis habilidades en diseño web y desarrollo frontend."
-      />
-      <meta
-        name="keywords"
-        content="desarrollo web, diseño web, ui, ux, next js, react js, javascript, desarrollo, webdev, programacion, pagina web, negocios, emprendimientos, empresas"
-      />
+      <meta name="description" content={description} />
+      <meta name="keywords" content={keywords} />
       <meta name="author" content="Marco Agüero" />
 
       {/* Etiquetas para mejorar la visibilidad en los motores de búsqueda */}
@@ -21,18 +15,12 @@ const HeadContent = () => {
       <meta name="googlebot" content="index, follow" />
 
       {/* Etiquetas para definir la estructura de tu página */}
-      <meta
-        property="og:title"
-        content="NanDev ~ Servicios de diseño y desarrollo web"
-      />
-      <meta
-        property="og:description"
-        content="Diseño web y desarrollo excepcionales: Descubre cómo puedo ayudarte a crear una presencia en línea impresionante y funcional con mis habilidades en diseño web y desarrollo frontend."
-      />
+      <meta property="og:title" content={title} />
+      <meta property="og:description" content={description} />
       <meta property="og:type" content="website" />
       <meta property="og:url" content="www.nandev.xyz" />
-      <meta property="og:image" content="https://i.imgur.com/oSJUapb.png" />
-      <meta property="og:image:alt" content="Nandev - Web development" />
+      {/* <meta property="og:image" content="https://i.imgur.com/oSJUapb.png" /> */}
+      <meta property="og:image:alt" content="Nandev ~ Web Developer" />
 
       {/* Etiquetas adicionales para SEO */}
       <link rel="canonical" href="https://www.nandev.xyz/" />
